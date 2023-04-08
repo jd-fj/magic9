@@ -1,5 +1,28 @@
 package main
 
+var normalAnswers = []string{
+	"Yes",
+	"It is certain",
+	"It is decidedly so",
+	"Without a doubt",
+	"Yes definitely",
+	"You may rely on it",
+	"As I see it yes",
+	"Most likely",
+	"Outlook good",
+	"Signs point to yes",
+	"Reply hazy try again",
+	"Ask again later",
+	"Better not tell you now",
+	"Cannot predict now",
+	"Concentrate and ask again",
+	"Don't count on it",
+	"My reply is no",
+	"My sources say no",
+	"Outlook not so good",
+	"Very doubtful",
+}
+
 var adventureTimeAnswers = []string{
 	"Oh. My. Glob. YES",
 	"That's algebraic, dude. Definitely!",
@@ -23,25 +46,29 @@ var adventureTimeAnswers = []string{
 	"My wizardy points to...no",
 }
 
-var normalAnswers = []string{
-	"Yes",
-	"It is certain",
-	"It is decidedly so",
-	"Without a doubt",
-	"Yes definitely",
-	"You may rely on it",
-	"As I see it yes",
-	"Most likely",
-	"Outlook good",
-	"Signs point to yes",
-	"Reply hazy try again",
-	"Ask again later",
-	"Better not tell you now",
-	"Cannot predict now",
-	"Concentrate and ask again",
-	"Don't count on it",
-	"My reply is no",
-	"My sources say no",
-	"Outlook not so good",
-	"Very doubtful",
+var spongebobAnswers = []string{
+	"Nautical instruments piont to yes",
+	"Aye aye, Capitan!",
+	"You bet your bottom barnacle",
+	"My bubble tells me yes",
+	"Goofy goofy goofy Goobers, YEAH!",
+	"As long as you don't cross the Flying Dutchman!",
+	"Neptune's beard, yes!",
+	"Aye, me swashbuckler!",
+	"You bet your sweet jellyfish",
+	"Sweet mother of Neptune, yes!",
+	"'meow' -Gary",
+	"Bring it around town and try again",
+	"Use your 🌈 IMAGINATION 🌈 and ask again",
+	"The coral fields are foggy, ask later",
+	"ask later...three hours later",
+	"Aw tartar sauce, very doubtful",
+	"Oh barnacles, no",
+	"No way you Krusty goon!",
+	"Is mayonnaise an instrument? —no",
+	"Wake me up when I care.",
+}
+
+var flapjackAnswers = []string{
+	"bu",
 }

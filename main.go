@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"math"
 	"math/rand"
@@ -11,11 +12,28 @@ func main() {
 	// forces new random seed value
 	rand.Seed(time.Now().UnixNano())
 
-	// derives valid number from array
-	randomSelection := (rand.Intn(len(adventureTimeAnswers)))
+	adventure := flag.Bool("adventure", false, "use other answers")
+	sponge := flag.Bool("sponge", false, "use other answers")
+	flap := flag.Bool("sponge", false, "use other answers")
+	flag.Parse()
 
-	// selects an answer
-	finalAnswer := (adventureTimeAnswers[randomSelection])
+	// Set answers based on flag
+	var answers []string
+	if *adventure {
+		answers = adventureTimeAnswers
+	} else if *sponge {
+		answers = spongebobAnswers
+	} else if *flap {
+		answers = flapjackAnswers
+	} else {
+		answers = normalAnswers
+	}
+	
+	// derives valid number from array (use 'normalAnswers' or 'adventureTimeAnswers')
+	randomSelection := (rand.Intn(len(answers)))
+
+	// selects an answer (use 'normalAnswers' or 'adventureTimeAnswers')
+	finalAnswer := (answers[randomSelection])
 
 	// slowly reveal the answer to user
 	printScrambledAnswer(finalAnswer)
